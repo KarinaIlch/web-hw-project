@@ -1,16 +1,9 @@
 class SearchPage {
 
-    get searchBtn() { return $('[data-action*="qbsearch-input#handleExpand"]')
-    }
-
-    get searchInput() { return $('#query-builder-test') 
-    }
-
-    get searchResults() { return $$('span.search-match') 
-    }
-
-    get firstResult() { return $('span.search-match')
-    }
+    get searchBtn() { return $('[data-action*="qbsearch-input#handleExpand"]') }
+    get searchInput() { return $('#query-builder-test') }
+    get searchResults() { return $$('span.search-match') }
+    get firstResult() { return $('span.search-match') }
 
     async clickOnSearchBtn() {
         await this.searchBtn.waitForClickable({ timeout: 10000 })

@@ -1,20 +1,9 @@
 class LoginPage {
 
-    get headerSignIn() { 
-        return $('h1*=Sign in to GitHub') 
-    }
-
-    get emailInput() { 
-        return $('#login_field') 
-    }
-
-    get passwordInput() { 
-        return $('#password') 
-    }
-
-    get signInBtn() { 
-        return $('input[name="commit"]') 
-    }
+    get headerSignIn() { return $('h1*=Sign in to GitHub') }
+    get emailInput() { return $('#login_field') }
+    get passwordInput() { return $('#password') }
+    get signInBtn() { return $('input[name="commit"]') }
 
     async enterUsernameOrEmail(value) {
         await this.emailInput.waitForDisplayed({ timeout: 10000 })
